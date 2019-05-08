@@ -1,0 +1,25 @@
+{
+  "name": "imap-spam-slayer",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "imap": "^0.8.19",
+    "moment": "^2.24.0"
+  },
+  "scripts": {
+    "start": "node imap-agent.js"
+  },
+  "eslintConfig": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

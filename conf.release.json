@@ -1,0 +1,13 @@
+{
+  "filterInterval": 60000,
+  "imapAccount": {
+    "user": "mygmailname@gmail.com",
+    "password": "mygmailpassword",
+    "host": "imap.gmail.com",
+    "port": 993,
+    "tls": true
+  },
+  "bodyExclusions": ["://red.","://r.","://links.", "://link.", "://lk.", "://tra.", "://lit."],
+  "whiteList": ["approved.sender@gmail.com"],
+  "spamFolder": "SPAM"
+}
