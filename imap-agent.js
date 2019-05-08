@@ -74,8 +74,7 @@ imap.once('ready', function() {
                 });
                 f.once('end', function () {
                     console.log('Done fetching all messages!');
-                    openInbox((err, box)=> {
-                        if (err) throw err;
+                    if (uidsToMove.length > 0) {
                         try {
                             imap.move(uidsToMove, config.spamFolder, (err) => {
                                 if (err) throw err;
@@ -84,9 +83,11 @@ imap.once('ready', function() {
                             });
                         } catch (err) {
                             console.error(`Can't move ${uidsToMove.join(",")}, reason :`, err);
+                            imap.end();
                         }
-                    });
-
+                    } else {
+                        imap.end();
+                    }
                 });
             } else {
                 imap.end();
