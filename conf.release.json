@@ -7,7 +7,7 @@
     "port": 993,
     "tls": true
   },
-  "bodyExclusions": ["://red.","://r.","://links.", "://link.", "://lk.", "://tra.", "://lit."],
+  "bodyExclusions": ["://red.","://r.","://links.", "://link.", "://lk.", "://tra.", "://lit.", "://follow."],
   "whiteList": ["approved.sender@gmail.com"],
   "spamFolder": "SPAM"
 }
