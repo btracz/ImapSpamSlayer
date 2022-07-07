@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "imap": "^0.8.19",
-    "moment": "^2.24.0"
+    "moment": "^2.29.4"
   },
   "scripts": {
     "start": "node imap-agent.js"
